@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="657" viewBox="0 0 520 438" role="img" aria-labelledby="title desc">
+  <title id="title">KITTYX architecture</title>
+  <desc id="desc">Thistle passes through Bake to Baguette, Croissant or Crust, producing Teto, Rei or Rusty Rei. These kernels connect directly to mikuOS. Linux connects through Neru to Nemunemu within mikuOS.</desc>
+  <style>
+    svg { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    text { fill: #24292f; }
+    .tier { fill: #57606a; font-size: 11px; font-weight: 500; }
+    .line { stroke: #8c959f; }
+    .separator { stroke: #d0d7de; }
+    .source { fill: #eaf3ff; stroke: #518ed0; }
+    .compiler { fill: #fff5e4; stroke: #b8802c; }
+    .kernel { fill: #e8f7f2; stroke: #27886b; }
+    .compat { fill: #f3edfc; stroke: #9675c4; }
+    .os { fill: #f6f8fa; stroke: #8c959f; }
+    .node { font-size: 13px; font-weight: 600; text-anchor: middle; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .tier { fill: #9da7b2; }
+      .line { stroke: #727b86; }
+      .separator { stroke: #30363d; }
+      .source { fill: #17283c; stroke: #518ed0; }
+      .compiler { fill: #2a2217; stroke: #d9a04f; }
+      .kernel { fill: #132924; stroke: #36a482; }
+      .compat { fill: #261e37; stroke: #a283d4; }
+      .os { fill: #161b22; stroke: #727b86; }
+    }
+  </style>
+  <g class="tier">
+    <text x="8" y="36">Kernel source</text>
+    <text x="8" y="106">Source lowering</text>
+    <text x="8" y="171">Compiler</text>
+    <text x="8" y="185">backends</text>
+    <text x="8" y="241">Executable</text>
+    <text x="8" y="255">kernels</text>
+    <text x="8" y="311">Compatibility</text>
+    <text x="8" y="325">layer</text>
+    <text x="8" y="403">Operating system</text>
+  </g>
+  <path class="separator" d="M116 8 V428" fill="none" stroke-dasharray="3 4"/>
+  <g class="line" fill="none" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M270 50 V82 M270 120 V135 H174 V152 M270 135 V152 M270 135 H366 V152"/>
+    <path d="M174 190 V222 M270 190 V222 M366 190 V222"/>
+    <path d="M174 260 V372 M270 260 V372 M366 260 V372"/>
+    <path d="M462 260 V292 M462 330 V387"/>
+  </g>
+  <rect class="source" x="225" y="12" width="90" height="38" rx="7"/>
+  <text class="node" x="270" y="36">Thistle</text>
+  <rect class="compiler" x="225" y="82" width="90" height="38" rx="7"/>
+  <text class="node" x="270" y="106">Bake</text>
+  <rect class="compiler" x="129" y="152" width="90" height="38" rx="7"/>
+  <text class="node" x="174" y="176">Baguette</text>
+  <rect class="compiler" x="225" y="152" width="90" height="38" rx="7"/>
+  <text class="node" x="270" y="176">Croissant</text>
+  <rect class="compiler" x="321" y="152" width="90" height="38" rx="7"/>
+  <text class="node" x="366" y="176">Crust</text>
+  <rect class="kernel" x="129" y="222" width="90" height="38" rx="7"/>
+  <text class="node" x="174" y="246">Teto</text>
+  <rect class="kernel" x="225" y="222" width="90" height="38" rx="7"/>
+  <text class="node" x="270" y="246">Rei</text>
+  <rect class="kernel" x="321" y="222" width="90" height="38" rx="7"/>
+  <text class="node" x="366" y="246">Rusty Rei</text>
+  <rect class="kernel" x="417" y="222" width="90" height="38" rx="7"/>
+  <text class="node" x="462" y="246">Linux</text>
+  <rect class="compat" x="417" y="292" width="90" height="38" rx="7"/>
+  <text class="node" x="462" y="316">Neru</text>
+  <rect class="os" x="129" y="372" width="378" height="57" rx="8"/>
+  <text x="270" y="408" font-size="22" font-weight="700" text-anchor="middle">mikuOS</text>
+  <path class="line" d="M462 372 V387" fill="none" stroke-width="1.5"/>
+  <rect class="compat" x="417" y="387" width="83" height="35" rx="5"/>
+  <text x="458.5" y="408" font-size="11" font-weight="600" text-anchor="middle">Nemunemu</text>
+</svg>

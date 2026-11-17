@@ -27,16 +27,6 @@ KITTYX is a collection of independently maintained projects for systems programm
 
 [mikuOS](https://github.com/kitty-crow/mikuOS) (初音ミクOS) provides a common userspace intended to operate across compatible kernel environments.
 
-```mermaid
-flowchart TD
-    TS[Thistle: TypeScript] --> B[Bake]
-    B --> W[Baguette]
-    W --> T[Teto: WebAssembly]
-    TS --> H[Hosted TypeScript execution]
-    L[Linux-WASM] --> N[Neru / Nemunemu]
-    H --> M[mikuOS userspace]
-    T --> M
-    N -. integration in development .-> M
-```
+![KITTYX architecture](architecture.svg)
 
-The diagram shows public execution paths, including work in development. It does not imply feature parity between them. Each repository documents its own interfaces, requirements, implementation status and licence.
+The diagram shows the kernel and compilation architecture, including work in development. It does not imply feature parity between them. Each repository documents its own interfaces, requirements, implementation status and licence.

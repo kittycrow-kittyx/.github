@@ -2,31 +2,35 @@
 
 **Kitty's Integrated TypeScript Toolchain Yielding a uniX-like system.**
 
-KITTYX is a collection of independently maintained projects for systems programming, compilation and operating system development. The projects share machine and binary-format contracts where necessary, but can be used independently.
-
 ## Specifications and tools
 
 | Project | Purpose |
 | --- | --- |
-| [KITTYX](https://github.com/kitty-crow/kittyx) | Machine, ABI and executable-format contracts. |
-| [ThistleASM](https://github.com/kitty-crow/thistle-asm) | Assembly, linking and THO/THX binary tooling. |
-| [ThistleCC](https://github.com/kitty-crow/thistlecc) | C and C++ compiler driver for compatible static RV64GC executables. |
-| [Bake](https://github.com/kitty-crow/bake) | TypeScript validation and semantics-preserving source lowering. |
-| [Baguette](https://github.com/kitty-crow/baguette) | Ahead-of-time TypeScript-to-WebAssembly compilation. |
+| [KITTYX](https://github.com/kittycrow-kittyx/kittyx) | Machine, ABI and executable-format contracts |
+| [ThistleASM](https://github.com/kittycrow-kittyx/thistle-asm) | Assembler, linker and THO/THX tooling |
+| [ThistleCC](https://github.com/kittycrow-kittyx/thistlecc) | C and C++ compiler driver for RV64GC THX executables |
+| [Bake](https://github.com/kittycrow-kittyx/bake) | Target-aware TypeScript validation and source lowering |
+| [Baguette](https://github.com/kittycrow-kittyx/baguette) | TypeScript-to-WebAssembly compiler |
+| [Croissant](https://github.com/kittycrow-kittyx/croissant) | Freestanding C backend |
+| [Crust](https://github.com/kittycrow-kittyx/crust) | Freestanding Rust backend |
 
 ## Kernels and execution
 
 | Project | Purpose |
 | --- | --- |
-| [Thistle](https://github.com/kitty-crow/thistle) | Canonical TypeScript kernel. |
-| [Teto](https://github.com/kitty-crow/teto) | WebAssembly kernel builds from Thistle. |
-| [Neru](https://github.com/kitty-crow/neru) | Linux-WASM kernel integration. |
-| [Nemunemu](https://github.com/kitty-crow/nemunemu) | THX execution and Linux compatibility. |
+| [Thistle](https://github.com/kittycrow-kittyx/thistle) | Canonical TypeScript kernel |
+| [Teto](https://github.com/kittycrow-kittyx/teto) | WebAssembly kernel |
+| [Rei](https://github.com/kittycrow-kittyx/rei) | Freestanding C kernel |
+| [Rusty Rei](https://github.com/kittycrow-kittyx/rusty-rei) | Freestanding Rust kernel |
+| [Neru](https://github.com/kittycrow-kittyx/neru) | Linux-WASM integration |
+| [Nemunemu](https://github.com/kittycrow-kittyx/nemunemu) | Linux userspace THX runtime |
 
 ## Operating system
 
-[mikuOS](https://github.com/kitty-crow/mikuOS) (初音ミクOS) provides a common userspace intended to operate across compatible kernel environments.
+[mikuOS](https://github.com/kittycrow-kittyx/mikuOS) (初音ミクOS) provides the
+common userspace.
 
 ![KITTYX architecture](architecture.svg)
 
-The diagram shows the kernel and compilation architecture, including work in development. It does not imply feature parity between them. Each repository documents its own interfaces, requirements, implementation status and licence.
+The diagram includes development targets. Supported execution modes and build
+requirements are documented in the individual repositories.
